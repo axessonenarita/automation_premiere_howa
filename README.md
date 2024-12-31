@@ -1,0 +1,2 @@
+# automation_premiere_howa
+法話生成を簡単にするためのツールです
