@@ -6,7 +6,14 @@ import { App } from "./panels/App.jsx";
 
 import { entrypoints } from "uxp";
 
-const appsController = new PanelController(() => <App />, {
+// appsControllerのインスタンスを作成
+let appsController = null;
+
+const createApp = () => {
+  return <App panelController={appsController} />;
+};
+
+appsController = new PanelController(createApp, {
   id: "panel",
   menuItems: [
     {

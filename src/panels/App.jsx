@@ -2,10 +2,10 @@ import React from "react";
 
 import { Container } from "../components/container.jsx";
 
-export const App = () => {
+export const App = ({ panelController }) => {
   return (
     <>
-      <Container />
+      <Container panelController={panelController} />
     </>
   );
 };

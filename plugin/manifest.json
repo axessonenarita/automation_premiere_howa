@@ -27,7 +27,8 @@
       "domains": [
         "https://*.adobe.com"
       ]
-    }
+    },
+    "localFileSystem": "fullAccess"
   },
   "entrypoints": [
     {
